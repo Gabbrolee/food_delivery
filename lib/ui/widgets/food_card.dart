@@ -20,6 +20,7 @@ class FoodCard extends StatelessWidget {
       child: SizedBox(
         height: 270 + 42,
         child: Stack(
+          clipBehavior: Clip.none,
           alignment: Alignment.topCenter,
           children: [
             Card(
@@ -63,14 +64,19 @@ class FoodCard extends StatelessWidget {
             ),
 
             // Image section
-            Container(
+            Positioned(
+              top: -30,
               height: 189,
               width: 168,
-              decoration: BoxDecoration(
-                image: hasImage ? DecorationImage(
-                  image: NetworkImage(product.images.first), fit: BoxFit.cover,
-                ) : null,
-                borderRadius: BorderRadius.circular(10),
+              child: Container(
+              //  height: 189,
+              //  width: 168,
+                decoration: BoxDecoration(
+                  image: hasImage ? DecorationImage(
+                    image: NetworkImage(product.images.first), fit: BoxFit.cover,
+                  ) : null,
+                  borderRadius: BorderRadius.circular(10),
+                ),
               ),
             )
           ],

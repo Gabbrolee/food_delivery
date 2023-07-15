@@ -97,7 +97,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ],
             ),
           ),
-          const SizedBox(height: 30),
+          const SizedBox(height: 50),
           const Expanded(child: ProductListView())
         ],
       ),

@@ -60,6 +60,7 @@ class _CartScreenState extends State<CartScreen> {
                           ),
                         ],
                       ),
+                      Spacer(),
                       const PlusAndMinusCart()
                     ],
                   ),
