@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:foodie_app/core/constant/constant/image_path.dart';
 import 'package:foodie_app/ui/home_screen.dart';
@@ -31,7 +30,8 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                     CircleAvatar(
                       backgroundColor: Colors.white,
                       radius: 50,
-                      child: Image.asset(ImagePath.logoImage, fit: BoxFit.cover),
+                      child:
+                          Image.asset(ImagePath.logoImage, fit: BoxFit.cover),
                     ),
                     const SizedBox(height: 32),
                     const Text(

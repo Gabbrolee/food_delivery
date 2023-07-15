@@ -8,8 +8,6 @@ import '../core/constant/constant/svg_path.dart';
 import '../core/models/app_state.dart';
 import '../core/models/product.dart';
 
-
-
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
@@ -111,7 +109,9 @@ class _HomeScreenState extends State<HomeScreen> {
         selectedIconTheme: const IconThemeData(color: Color(0xFF4DAB95)),
         items: [
           BottomNavigationBarItem(
-            icon: SvgPicture.asset(SvgPath.homeIcon),
+            icon: SvgPicture.asset(
+                SvgPath.homeIcon,
+                color: Theme.of(context).primaryColor,),
             label: '',
           ),
           const BottomNavigationBarItem(
@@ -123,7 +123,12 @@ class _HomeScreenState extends State<HomeScreen> {
             label: '',
           ),
           BottomNavigationBarItem(
-            icon: SvgPicture.asset(SvgPath.userLogo, width: 30, height: 30),
+            icon: SvgPicture.asset(
+              SvgPath.userLogo,
+              width: 30,
+              height: 30,
+              color: const Color(0xffADADAF),
+            ),
             label: '',
           ),
           const BottomNavigationBarItem(
