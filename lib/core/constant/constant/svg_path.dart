@@ -1,7 +1,7 @@
 import 'dart:core';
 
 class SvgPath {
-  static const svgBasePath = "assets/svgs/";
+  static const svgBasePath = "assets/svgs";
   static const  foodieLogo2 = "$svgBasePath/foodie_logo2.svg";
   static const  foodieLogo = "$svgBasePath/foodie_logo.svg";
   static const  parralelLogo = "$svgBasePath/parallel_image.svg";

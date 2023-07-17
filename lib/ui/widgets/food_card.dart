@@ -73,7 +73,7 @@ class FoodCard extends StatelessWidget {
               //  width: 168,
                 decoration: BoxDecoration(
                   image: hasImage ? DecorationImage(
-                    image: NetworkImage(product.images.first), fit: BoxFit.cover,
+                    image: NetworkImage(product.images!.first), fit: BoxFit.cover,
                   ) : null,
                   borderRadius: BorderRadius.circular(10),
                 ),
@@ -85,5 +85,6 @@ class FoodCard extends StatelessWidget {
     );
   }
 
-  bool get hasImage => product.images.firstWhereOrNull != null;
+  bool get hasImage => product.images?.firstWhereOrNull != null;
 }
+

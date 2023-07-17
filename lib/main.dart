@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:foodie_app/blocs/product_bloc.dart';
-import 'package:foodie_app/ui/home_screen.dart';
 import 'package:foodie_app/ui/welcome_screen.dart';
 
 void main() {

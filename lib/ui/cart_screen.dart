@@ -23,48 +23,53 @@ class _CartScreenState extends State<CartScreen> {
             padding: const EdgeInsets.only(left: 30, right: 20),
             child: Column(
               children: [
-                Container(
-                  width: double.infinity,
-                  padding: const EdgeInsets.all(16),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    color: Colors.white,
-                  ),
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.end,
-                    children: [
-                      Row(
+                for (int index = 0; index < 3; index++)
+                  Dismissible(
+                    key: Key(index.toString()),
+                    child: Container(
+                      width: double.infinity,
+                      padding: const EdgeInsets.all(16),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        color: Colors.white,
+                      ),
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.end,
                         children: [
-                          const CircleAvatar(
-                            backgroundImage: AssetImage(ImagePath.productImage),
-                            radius: 50,
-                          ),
-                          const SizedBox(
-                            width: 10,
-                          ),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: const [
-                              Text("Veggie tomato mix"),
-                              SizedBox(
-                                height: 11,
+                          Row(
+                            children: [
+                              const CircleAvatar(
+                                backgroundImage:
+                                    AssetImage(ImagePath.productImage),
+                                radius: 50,
                               ),
-                              Text(
-                                "#1,900",
-                                style: TextStyle(color: Colors.red),
-                              )
+                              const SizedBox(
+                                width: 10,
+                              ),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: const [
+                                  Text("Veggie tomato mix"),
+                                  SizedBox(
+                                    height: 11,
+                                  ),
+                                  Text(
+                                    "#1,900",
+                                    style: TextStyle(color: Colors.red),
+                                  )
+                                ],
+                              ),
+                              const SizedBox(
+                                width: 10,
+                              ),
                             ],
                           ),
-                          const SizedBox(
-                            width: 10,
-                          ),
+                          const Spacer(),
+                          const PlusAndMinusCart()
                         ],
                       ),
-                      Spacer(),
-                      const PlusAndMinusCart()
-                    ],
+                    ),
                   ),
-                )
               ],
             ),
           ),

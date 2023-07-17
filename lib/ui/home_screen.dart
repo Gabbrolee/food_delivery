@@ -109,15 +109,15 @@ class _HomeScreenState extends State<HomeScreen> {
         selectedIconTheme: const IconThemeData(color: Color(0xFF4DAB95)),
         items: [
           BottomNavigationBarItem(
-            icon: SvgPicture.asset(
-                SvgPath.homeIcon,
-                color: Theme.of(context).primaryColor,),
+            icon: Icon(
+              Icons.home,
+              color: Theme.of(context).primaryColor,
+            ),
             label: '',
           ),
           const BottomNavigationBarItem(
             icon: Icon(
               Icons.favorite_border,
-              size: 30,
               color: Color(0xffADADAF),
             ),
             label: '',
@@ -125,8 +125,6 @@ class _HomeScreenState extends State<HomeScreen> {
           BottomNavigationBarItem(
             icon: SvgPicture.asset(
               SvgPath.userLogo,
-              width: 30,
-              height: 30,
               color: const Color(0xffADADAF),
             ),
             label: '',
@@ -134,7 +132,6 @@ class _HomeScreenState extends State<HomeScreen> {
           const BottomNavigationBarItem(
             icon: Icon(
               Icons.history,
-              size: 30,
               color: Color(0xffADADAF),
             ),
             label: '',

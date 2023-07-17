@@ -69,7 +69,7 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
                         elevation: 10.0,
                         child: ClipRRect(
                             borderRadius: BorderRadius.circular(100),
-                            child: Image.network(product.images.first))),
+                            child: Image.network(product.images!.first))),
                   ),
                   const SizedBox(height: 15),
                   Text(product.title ?? "--"),
