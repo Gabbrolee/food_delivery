@@ -22,15 +22,17 @@ class _HomeScreenState extends State<HomeScreen> {
       backgroundColor: const Color(0xFFE9E4E4),
       appBar: CustomAppBar(
         leading: SizedBox(
-          height: 30,
-          width: 30,
           child: SvgPicture.asset(SvgPath.parralelLogo, color: Colors.black),
         ),
-        actions: [
+        actions: const [
+          // Padding(
+          //   padding: const EdgeInsets.only(right: 30.0),
+          //   child: SvgPicture.asset(SvgPath.shoppingCart),
+          // )
           Padding(
-            padding: const EdgeInsets.only(right: 30.0),
-            child: SvgPicture.asset(SvgPath.shoppingCart),
-          )
+            padding: EdgeInsets.only(right: 30.0),
+            child: Icon(Icons.shopping_cart, color: Color(0xffADADAF)),
+          ),
         ],
       ),
       body: Column(
