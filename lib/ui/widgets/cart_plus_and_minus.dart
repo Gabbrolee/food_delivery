@@ -12,15 +12,24 @@ class PlusAndMinusCart extends StatelessWidget {
       padding: const EdgeInsets.all(4.0),
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(30),
-          color: const Color(0xFFFA4A0C)
-      ),
+          color: const Color(0xFFFA4A0C)),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: const [
-          Text("-", style: TextStyle(color: Colors.white),),
-          Text("1", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),),
-          Text("+", style: TextStyle(color: Colors.white),)
-        ],),
+          Text(
+            "-",
+            style: TextStyle(color: Colors.white),
+          ),
+          Text(
+            "1",
+            style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+          ),
+          Text(
+            "+",
+            style: TextStyle(color: Colors.white),
+          )
+        ],
+      ),
     );
   }
 }

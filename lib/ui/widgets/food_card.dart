@@ -65,9 +65,9 @@ class FoodCard extends StatelessWidget {
 
             // Image section
             Positioned(
-              top: -30,
-              height: 189,
-              width: 168,
+              top: -20,
+              height: 169,
+              width: 158,
               child: Container(
               //  height: 189,
               //  width: 168,
